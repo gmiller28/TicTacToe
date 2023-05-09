@@ -1,0 +1,30 @@
+﻿<Window x:Class="TicTacToe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tic Tac Toe" Height="300" Width="300" Icon="/download (1).png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Button x:Name="space00" Grid.Row="0" Grid.Column="0" Content="" Click="Button_Click" Background="#FF850CEF" BorderBrush="#FF040404" FontSize="130" FontWeight="Bold" FontStyle="Italic" FontFamily="Magneto" Foreground="#FFCC1919" />
+        <Button x:Name="space01" Grid.Row="0" Grid.Column="1" Content="" Click="Button_Click" Background="#FF850CEF" BorderBrush="#FF040404" FontSize="130" FontWeight="Bold" FontStyle="Italic" FontFamily="Magneto" Foreground="#FFCC1919" />
+        <Button x:Name="space02" Grid.Row="0" Grid.Column="2" Content="" Click="Button_Click" Background="#FF850CEF" BorderBrush="#FF040404" FontSize="130" FontWeight="Bold" FontStyle="Italic" FontFamily="Magneto" Foreground="#FFCC1919" />
+        <Button x:Name="space03" Grid.Row="1" Grid.Column="0" Content="" Click="Button_Click" Background="#FF850CEF" BorderBrush="#FF040404" FontSize="130" FontWeight="Bold" FontStyle="Italic" FontFamily="Magneto" Foreground="#FFCC1919" />
+        <Button x:Name="space04" Grid.Row="1" Grid.Column="1" Content="" Click="Button_Click" Background="#FF850CEF" BorderBrush="#FF040404" FontSize="130" FontWeight="Bold" FontStyle="Italic" FontFamily="Magneto" Foreground="#FFCC1919" />
+        <Button x:Name="space05" Grid.Row="1" Grid.Column="2" Content="" Click="Button_Click" Background="#FF850CEF" BorderBrush="#FF040404" FontSize="130" FontWeight="Bold" FontStyle="Italic" FontFamily="Magneto" Foreground="#FFCC1919" />
+        <Button x:Name="space06" Grid.Row="2" Grid.Column="0" Content="" Click="Button_Click" Background="#FF850CEF" BorderBrush="#FF040404" FontSize="130" FontWeight="Bold" FontStyle="Italic" FontFamily="Magneto" Foreground="#FFCC1919" />
+        <Button x:Name="space07" Grid.Row="2" Grid.Column="1" Content="" Click="Button_Click" Background="#FF850CEF" BorderBrush="#FF040404" FontSize="130" FontWeight="Bold" FontStyle="Italic" FontFamily="Magneto" Foreground="#FFCC1919" />
+        <Button x:Name="space08" Grid.Row="2" Grid.Column="2" Content="" Click="Button_Click" Background="#FF850CEF" BorderBrush="#FF040404" FontSize="130" FontWeight="Bold" FontStyle="Italic" FontFamily="Magneto" Foreground="#FFCC1919" />
+        <TextBlock x:Name="xWinsCount" HorizontalAlignment="Left" TextWrapping="Wrap" Text="X Wins: 0" VerticalAlignment="Top" RenderTransformOrigin="1.42,0.293" Margin="10,4,0,0" Width="190" FontWeight="Bold" FontStyle="Italic" FontSize="18" FontFamily="Arial Black" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="oWinsCount" HorizontalAlignment="Left" TextWrapping="Wrap" Text="O Wins: 0" VerticalAlignment="Top" RenderTransformOrigin="1.42,0.293" Margin="10,26,0,0" FontSize="18" FontWeight="Bold" FontStyle="Italic" FontFamily="Arial Black" Width="190" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="timerTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Time Left: 10" VerticalAlignment="Top" RenderTransformOrigin="1.42,0.293" Margin="10,47,0,0" FontSize="18" FontWeight="Bold" FontStyle="Italic" FontFamily="Arial Black" Width="255" Grid.ColumnSpan="3"/>
+        <TextBlock x:Name="playerTurnTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Current Player:" VerticalAlignment="Top" RenderTransformOrigin="1.42,0.293" Margin="10,69,0,0" FontSize="18" FontWeight="Bold" FontStyle="Italic" FontFamily="Arial Black" Width="255" Grid.ColumnSpan="3"/>
+    </Grid>
+</Window>

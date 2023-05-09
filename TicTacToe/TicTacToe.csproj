@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\ES_Bubble Blip 2 - SFX Producer.wav" />
+    <None Remove="Assets\ES_Magic Chime - SFX Producer.wav" />
+    <None Remove="Assets\ES_Timer Clock 1 - SFX Producer.wav" />
+    <None Remove="download %281%29.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\ES_Bubble Blip 2 - SFX Producer.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\ES_Magic Chime - SFX Producer.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\ES_Timer Clock 1 - SFX Producer.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="download (1).png" />
+  </ItemGroup>
+
+</Project>
